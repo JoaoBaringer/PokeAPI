@@ -1,55 +1,51 @@
 .card-infos {
-    border: 3px solid wheat;
-    border-radius: 20px;
-    width: 800px;
-    height: 500px;
-    display: grid;
-    color: rgb(201, 14, 61);
-    grid-template-columns: 1fr;
-    background: #FFF url('../components/images/cardinfos.jpg') no-repeat bottom;
-
+  border: 3px solid wheat;
+  border-radius: 20px;
+  width: 800px;
+  height: 500px;
+  display: grid;
+  color: rgb(201, 14, 61);
+  grid-template-columns: 1fr;
+  background: #FFF url("../components/images/cardinfos.jpg") no-repeat bottom;
+}
+.card-infos .status {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+  text-align: center;
+  grid-row: 1/2;
+}
+.card-infos .status .card-status {
+  border: 3px solid wheat;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.card-infos .status .card-status h2, .card-infos .status .card-status span {
+  width: 100%;
 }
 
 .card-infos h1 a {
-    position: absolute;
-    top: 0%;
-    color: rgb(201, 14, 61);
-    left: 2%;
-    text-decoration: none;
+  position: absolute;
+  top: 0%;
+  color: rgb(201, 14, 61);
+  left: 2%;
+  text-decoration: none;
 }
 
 .image-card {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
 }
-
 .image-card img {
-    margin: auto;
+  margin: auto;
 }
 
-.status {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 10px;
-    text-align: center;
-    grid-row: 1 / 2;
-}
-
-.card-status {
-    border: 3px solid wheat;
-    border-radius: 20px;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-status h2,
-span {
-    width: 100%;
-}
+/*# sourceMappingURL=pokeinfos.css.map */

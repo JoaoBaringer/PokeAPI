@@ -1,31 +1,37 @@
 #content {
-    height: 100%;
-    width: 1500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
+  height: 100%;
+  width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .left,
 .right {
-    width: 55px;
-    height: 55px;
-    position: absolute;
-    cursor: pointer;
-}
-
-.left:hover, .right:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    color: rgb(62, 14, 94);
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  cursor: pointer;
 }
 
 .left {
-    top: 45%;
-    left: 5%;
+  top: 45%;
+  left: 5%;
+}
+.left:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: purple;
 }
 
 .right {
-    top: 45%;
-    right: 5%;
+  top: 45%;
+  right: 5%;
 }
+.right:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: purple;
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,35 @@
+$board: rgb(201, 14, 61);
+
+.card {
+    width: 100%;
+    height: 100%;
+    border: 2px solid wheat;
+    display: grid;
+    color: $board;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #FFF url('../components/images/cardbackground.jpg') no-repeat;
+
+    &:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+}
+
+.image {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.infos {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
