@@ -1,22 +1,15 @@
 $purple: rgb(62, 14, 94);
 $board: rgb(201, 14, 61);
 
-@mixin mediaquery ($width, $template, $height, $display ) {
-    width: $width;
-    grid-template-columns: $template;
-    height: $height;
-    display: $display;
-}
-
 //container
 
 #content {
-    height: 70%;
     width: 1500px;
     display: grid;
     padding: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
+
 }
 
 //cards
@@ -62,6 +55,7 @@ $board: rgb(201, 14, 61);
     #content {
         display: flex;
         flex-wrap: wrap;
+        border: 1px solid red;
 
         .card {
             height: 135px;
@@ -78,6 +72,7 @@ $board: rgb(201, 14, 61);
                 }
             }
         }
+
 
 
     }

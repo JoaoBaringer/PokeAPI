@@ -14,7 +14,6 @@
   gap: 20px;
   padding: 10px;
   text-align: center;
-  grid-row: 1/2;
 }
 .card-infos .status .card-status {
   border: 3px solid wheat;
@@ -26,7 +25,8 @@
   justify-content: center;
   align-items: center;
 }
-.card-infos .status .card-status h2, .card-infos .status .card-status span {
+.card-infos .status .card-status h2,
+.card-infos .status .card-status span {
   width: 100%;
 }
 
@@ -46,6 +46,37 @@
 }
 .image-card img {
   margin: auto;
+}
+
+@media (max-width: 390px) {
+  .card-infos {
+    display: flex;
+    flex-wrap: wrap;
+    height: 560px;
+  }
+  .card-infos .image-card {
+    width: 100%;
+    height: 30%;
+  }
+  .card-infos .status {
+    gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-infos .status .card-status {
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-infos .status .card-status h2 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .card-infos .status .card-status span {
+    width: 30%;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=pokeinfos.css.map */

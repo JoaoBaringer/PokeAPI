@@ -1,24 +1,9 @@
-import { Fragment, useContext, useState } from "react";
-import '../styles/card.css'
+import { Fragment, useContext } from "react";
+import '../styles/content.css'
 import { PokedexContext } from "../store/store";
 
 const Card = () => {
     const pokemon = useContext(PokedexContext);
-    const [current, setCurrent] = useState(0)
-    const size = pokemon.lenght - 1
-
-    const nextSlide = () => {
-        setCurrent(current !== size ? current + 1 : 0)
-    }
-
-    const prevSlide = () => {
-        setCurrent(current === 0 ? size : current - 1)
-    }
-
-    const redirects = (pokename) => {
-
-    }
-
 
     return (
         <Fragment>
@@ -26,12 +11,15 @@ const Card = () => {
                 let pokename = item.name
                 return (
                     <div key={item.id} className="card">
-                        <div className="image">
-                            <a href={`/${pokename}`}><img src={item.sprites.other.dream_world.front_default} /></a>
-                        </div>
-                        <div className="infos">
-                            <h2>{`ID ${item.id}`}</h2>
-                            <h3>{item.name.toUpperCase()}</h3>
+                        <div className="image" key={item.name} >
+                            <a href={`/${pokename}`}>
+                                <img src={item.sprites.other.dream_world.front_default} />
+                            </a>
+                            <div className="infos">
+                                <h2>{`ID ${item.id}`}</h2>
+                                <h3>{item.name.toUpperCase()}</h3>
+                            </div>
+
                         </div>
                     </div>
                 )

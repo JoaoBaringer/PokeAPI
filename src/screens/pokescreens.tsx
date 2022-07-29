@@ -26,8 +26,10 @@ const PokeScreen = () => {
                 <div className="image-card">
                     <img src={infos.sprites.other.dream_world.front_default} />
                 </div>
+
                 <div className="status">
                     <div className="card-status">
+                        <h2>Name : {infos.name.toUpperCase()}</h2>
                         <h2>Height : {infos.height}</h2>
                         <h2>Weight: {infos.weight}</h2>
                     </div>

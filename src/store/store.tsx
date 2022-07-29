@@ -9,7 +9,7 @@ const Context = ({ children }: UserContextProps) => {
     const [allObject, setObject] = useState<any>([]);
     
     const GetPokemons = async () => {
-        const res = await axios(`https://pokeapi.co/api/v2/pokemon?offset=20&limit=10`);
+        const res = await axios(`https://pokeapi.co/api/v2/pokemon?offset=20&limit=15`);
         const data = await res.data.results;
         getPokeInfo(data);
     }
